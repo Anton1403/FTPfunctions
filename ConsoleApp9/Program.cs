@@ -11,8 +11,7 @@ namespace ConsoleApp9
         static void Main(string[] args)
         {
             ftp ftpClient = new ftp(@"ftp://192.168.1.149/", "user-ftp", "1234");
-            //ftpClient.download("/1/.", @"D:\downloaded\");
-            ftpClient.upload("/2/pass.txt", @"D:\an.txt");
+            ftpClient.download("/2/pass.txt", @"D:\downloaded\passfromftp.txt");
         }
     }
 }
